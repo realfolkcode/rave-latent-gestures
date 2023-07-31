@@ -1,6 +1,6 @@
 # RAVE Latent Space Exploration with Gestures
 
-This is a pure Python project that allows users to navigate through the latent space of a pretrained RAVE model with gestures.
+This is a pure Python project that allows users to navigate through the latent space of a pretrained [RAVE](https://github.com/acids-ircam/RAVE) model with gestures.
 
 ## Setup
 1) Clone the repository
@@ -19,3 +19,8 @@ Optional arguments:
 - `--num_blocks` (the number of streaming blocks; the smaller number corresponds to a smaller delay; default=4)
 - `--temperature` (variance multiplier for encoder; indicates the randomness of sampling; default=2.0; recommendations: works fine from 1 to 4)
 - `--cam_device` (the index of camera device; default=0)
+
+## Acknowledgements
+- Antoine Caillon and IRCAM for [RAVE](https://github.com/acids-ircam/RAVE)
+- Google for [MediaPipe solutions](https://developers.google.com/mediapipe)
+- Matthias Geier and other contributors for [sounddevice](https://github.com/spatialaudio/python-sounddevice/)
