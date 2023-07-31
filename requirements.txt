@@ -1,0 +1,4 @@
+mediapipe>=0.10.1
+numpy>=1.25.0
+sounddevice>=0.4.6
+torch>=2.0.1
