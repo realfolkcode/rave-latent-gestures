@@ -8,3 +8,14 @@ This is a pure Python project that allows users to navigate through the latent s
 3) Download a [pretrained gesture encoder](https://github.com/realfolkcode/rave-latent-gestures/releases/download/v1.0.0/models-data.zip) and unzip it in the root directory of the project
 4) Download the [MediaPipe HandLandmarker model](https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task) and place it in the `models` directory
 5) Move a pretrained RAVE model to the `models` directory (you can download some [here](https://acids-ircam.github.io/rave_models_download) or train your own custom model)
+
+## Usage
+1) Connect a webcam
+2) Run `python generate.py --rave_model [PATH TO RAVE MODEL]`
+
+Optional arguments:
+- `--gesture_encoder` (the path to gesture encoder; change this to indicate your custom path or if you have trained a custom encoder)
+- `--num_channels` (the number of output audio channels; depends on a RAVE model; default=1)
+- `--num_blocks` (the number of streaming blocks; the smaller number corresponds to a smaller delay; default=4)
+- `--temperature` (variance multiplier for encoder; indicates the randomness of sampling; default=2.0; recommendations: works fine from 1 to 4)
+- `--cam_device` (the index of camera device; default=0)
