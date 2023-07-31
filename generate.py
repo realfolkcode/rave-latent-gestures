@@ -45,10 +45,11 @@ def main(args):
     channels = args.num_channels
     num_blocks = args.num_blocks
     temperature = args.temperature
+    cam_device = args.cam_device
 
     rave_model = torch.jit.load(rave_path).eval()
 
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(cam_device)
     success, img = cap.read()
     img = cv2.flip(img, 1)
     h, w, c = img.shape
@@ -76,5 +77,6 @@ if __name__ == "__main__":
     parser.add_argument('--num_channels', type=int, required=False, default=1, help='number of output audio channels of RAVE model')
     parser.add_argument('--num_blocks', type=int, required=False, default=4, help='number of blocks')
     parser.add_argument('--temperature', type=float, required=False, default=2., help='variance multiplier for encoder')
+    parser.add_argument('--cam_device', type=int, required=False, default=0, help='camera device id')
     args = parser.parse_args()
     main(args)
