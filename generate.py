@@ -73,7 +73,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--rave_model', type=str, required=True, help='path to RAVE model')
-    parser.add_argument('--gesture_encoder', type=str, required=True, help='path to gesture encoder')
+    parser.add_argument('--gesture_encoder', type=str, required=False, default='./models/gesture_encoder.ts', help='path to gesture encoder')
     parser.add_argument('--num_channels', type=int, required=False, default=1, help='number of output audio channels of RAVE model')
     parser.add_argument('--num_blocks', type=int, required=False, default=4, help='number of blocks')
     parser.add_argument('--temperature', type=float, required=False, default=2., help='variance multiplier for encoder')
