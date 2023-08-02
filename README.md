@@ -24,3 +24,4 @@ Optional arguments:
 - Antoine Caillon and IRCAM for [RAVE](https://github.com/acids-ircam/RAVE)
 - Google for [MediaPipe solutions](https://developers.google.com/mediapipe)
 - Matthias Geier and other contributors for [sounddevice](https://github.com/spatialaudio/python-sounddevice/)
+- Kapitanov et al. for [HaGRID dataset](https://github.com/hukenovs/hagrid)
