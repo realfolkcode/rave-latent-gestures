@@ -1,10 +1,13 @@
 # RAVE Latent Space Exploration with Gestures
 
-This is a pure Python project that allows users to navigate through the latent space of a pretrained [RAVE](https://github.com/acids-ircam/RAVE) model with gestures.
+This is a pure Python project that allows users to navigate through the latent space of a pretrained [RAVE](https://github.com/acids-ircam/RAVE) model with gestures in real-time.
 
 [Video example](https://youtu.be/nLMbJtdmUw4)
 
 ![image](https://github.com/realfolkcode/rave-latent-gestures/assets/64730991/72f6bcb5-a676-443f-b248-d57febe0a81e)
+
+## How it works
+The gesture encoder is designed in such a way that its latent codes follow the prior of RAVE (4-dimensional Gaussian distribution). Each time, RAVE decodes the gesture embeddings. More information is provided in the [training notebook](https://github.com/realfolkcode/rave-latent-gestures/blob/main/notebooks/rave_gesture_encoder.ipynb).
 
 ## Setup
 1) Clone the repository
