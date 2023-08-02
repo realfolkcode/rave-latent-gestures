@@ -2,6 +2,10 @@
 
 This is a pure Python project that allows users to navigate through the latent space of a pretrained [RAVE](https://github.com/acids-ircam/RAVE) model with gestures.
 
+[Video example](https://youtu.be/nLMbJtdmUw4)
+
+![image](https://github.com/realfolkcode/rave-latent-gestures/assets/64730991/72f6bcb5-a676-443f-b248-d57febe0a81e)
+
 ## Setup
 1) Clone the repository
 2) Install the required packages via `pip install -r requirements.txt` (tested with Python 3.10.12)
